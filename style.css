@@ -1,0 +1,425 @@
+/* Importing all the diferent variants of the Fonts used in woff and woff2 formats*/
+
+/* Light */
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('assets/fonts/Satoshi-Light.woff2') format('woff2'),
+         url('../fonts/MyCustomFont-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+/* Regular */
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('assets/fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('../fonts/MyCustomFont-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* Medium */
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('assets/fonts/Satoshi-Medium.woff2') format('woff2'),
+         url('../fonts/Satoshi-Medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+/* Bold */
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('assets/fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('../fonts/Satoshi-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+/* Black */
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('assets/fonts/Satoshi-Black.woff2') format('woff2'),
+         url('../fonts/Satoshi-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    height: 4630px;
+    color: #fff;
+    font-family: 'Satoshi-Regular', sans-serif;
+    font-size: 20px;
+    /* background gradient */
+    background: rgb(1,1,2);
+    background: linear-gradient(180deg, rgba(1,1,2,1) 0.3%, rgba(64,19,121,1) 18%, rgba(20,53,139,1) 28%, rgb(27, 64, 157) 47%, rgba(23,3,33) 67%, rgba(1,1,2,1) 100%);
+}
+
+header{
+    z-index: 999; /* to make sure the navigation bar stays on top */
+    width: 100%;
+    height: 101px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    padding: 0 16px;
+    /* navbar glass effect */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px 48px 16px 16px;
+}
+.logo-container{
+    margin-right: auto;
+}
+.logo{
+    width: 80px;
+    position: relative;
+    cursor: pointer;
+    padding: 0 16px;
+    }
+    .links-wrapper{
+        display: flex;
+        justify-content: flex-end;
+    }
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Satoshi-Medium", sans-serif;
+    padding-right: 40px;
+}
+.nav-links li{
+    position: relative;
+    list-style: none;
+    padding: 0px 16px;
+}
+.nav-links li a{
+    position: relative;                 
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.nav-links li a:hover{
+    color: #d0d0d0;
+}
+.nav-links li a:after{
+    content: "";
+    position: absolute;
+    background-color: #0E76FF;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -12px;
+    transition: 0.3s;
+}
+.nav-links li a:hover:after{
+    width: 100%;
+}
+#main-btn{
+    background-color: #0E76FF;
+    color: #fff;
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 62px;
+    cursor: pointer;
+    padding: 16px 32px;
+    transition: 0.3s ease;
+}
+#main-btn:hover{
+    background-color: #780EFF;
+}
+#hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 66px;
+    margin-top: 136px;
+}
+#hero-section h1{
+    font-family: 'Satoshi-Black', sans-serif;
+    font-size: 62px;
+    line-height: 125%;
+    letter-spacing: -2px;
+    margin-bottom: 32px;
+}
+#hero-section h1 span{
+    background: linear-gradient(90deg, rgb(32, 10, 234), rgb(163, 19, 210), rgb(195, 19, 239), rgb(16, 3, 134));
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientLoop 6s ease infinite;
+}
+@keyframes gradientLoop {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#hero-section h2{
+    font-family: 'Satoshi-Bold', sans-serif;
+    font-size: 26px;
+    letter-spacing: 0px;
+    margin-bottom: 8px;
+}
+#hero-section p{
+    width: 620px;
+    font-size: 22px;
+    line-height: 140%;
+    margin-bottom: 32px;
+}
+aside .blur{
+    position: absolute;
+    transform: translate(-150px, 150px);
+    box-shadow: 0 0 150px 120px rgba(14, 118, 255, 0.6);
+    z-index: -100;
+}
+
+/* banner CSS */
+#stats-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    padding: 48px 0 80px 0;
+    background: linear-gradient(180deg, rgba(2,2,60,1) 15%, rgba(0,0,0, 0) 100%) ;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.card-wrapper i{
+    font-size: 48px;
+    padding-bottom: 16px;
+}
+.card-wrapper figcaption p{
+    font-family: "Satoshi-Medium", sans-serif;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.card-wrapper  figcaption h4{
+    font-family: "Satoshi-Bold";
+    font-size: 42px;
+    text-align: center;
+}
+#about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 306px 0 208px 0;
+}
+#about-section h2{
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 60px;
+    margin-bottom: 104px;
+}
+#about-section .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-section .content-wrapper p{
+    width: 480px;
+    padding: 124px;
+}
+.content1{
+    margin-bottom: 128px;
+}
+#about-section .content-wrapper img{
+    width: 480px;
+}
+#innovation-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#innovation-section h2{
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 60px;
+    margin-bottom: 112px;
+}
+
+/* Cards Section */
+:root {
+    --bg-color: rgb(20, 20, 20);
+    --card-color: rgb(42, 1, 57);
+  }
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;  
+    max-width: 916px;
+    width: calc(100% - 20px);
+  } 
+  #cards:hover > .card::after{
+    opacity: 1;
+  }  
+  .card{
+    background-color: rgba(109, 36, 127, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    height: 260px;
+    flex-direction: column;
+    position: relative;
+    width: 300px;  
+  }
+  .card:hover::before{
+    opacity: 1;
+  }
+  .card::before,
+  .card::after{
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+  }
+  .card::before{
+    background: radial-gradient(
+      800px circle at var(--mouse-x) var(--mouse-y), 
+      rgba(255, 255, 255, 0.06),
+      transparent 40%
+    );
+    z-index: 3;
+  }
+  .card::after{  
+    background: radial-gradient(
+      600px circle at var(--mouse-x) var(--mouse-y), 
+      rgba(255, 255, 255, 0.4),
+      transparent 40%
+    );
+    z-index: 1;
+  }
+  .card > .card-content{
+    background-color: var(--card-color);
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    inset: 1px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  i {  
+    color: rgb(240, 240, 240);
+  }
+   .card-image{
+    align-items: center;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    overflow: hidden;
+  } 
+  .card-image > i{
+    font-size: 3em;
+    opacity: 0.7;
+  } 
+  .card-info-wrapper{
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    padding: 0px 20px;
+  }
+  .card-info{
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+  }
+  .card-info > i{  
+    font-size: 1em;
+    height: 20px;
+    line-height: 20px;
+  }
+  .card-info-title > h3{
+    font-size: 1.1em;
+    line-height: 20px;
+  }
+  .card-info-title > p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Satoshi-Medium";
+    font-size: 0.85em;
+    margin-top: 8px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  /* -- ↓ ↓ ↓ some responsiveness for the cards ↓ ↓ ↓ -- */ 
+  @media(max-width: 1000px) {
+    body {
+      align-items: flex-start;  
+      overflow: auto;
+    }
+    #cards {    
+      max-width: 1000px;
+      padding: 10px 0px;
+    }
+    .card {
+      flex-shrink: 1;
+      width: calc(50% - 4px);
+    }
+  }
+  
+  @media(max-width: 500px) {
+    .card {
+      height: 180px;
+    }
+    .card-image {
+      height: 80px;  
+    }
+    .card-image > i {
+      font-size: 2em;
+    } 
+    .card-info-wrapper {
+      padding: 0px 10px;
+    }   
+    .card-info > i { 
+      font-size: 0.8em; 
+    }  
+    .card-info-title > h3 {
+      font-size: 0.9em;
+    } 
+    .card-info-title > h4 {
+      font-size: 0.8em;
+      margin-top: 4px;
+    }
+  }
+
+  @media(max-width: 320px) {
+    .card {
+      width: 100%;
+    }
+  }
