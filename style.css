@@ -57,6 +57,8 @@ body{
     background: linear-gradient(180deg, rgba(1,1,2,1) 0.3%, rgba(64,19,121,1) 18%, rgba(20,53,139,1) 28%, rgb(27, 64, 157) 47%, rgba(23,3,33) 67%, rgba(1,1,2,1) 100%);
 }
 
+
+/* --- navigation section --- */
 header{
     z-index: 999; /* to make sure the navigation bar stays on top */
     width: 100%;
@@ -124,6 +126,9 @@ nav{
 .nav-links li a:hover:after{
     width: 100%;
 }
+
+
+/* --- hero section --- */
 #main-btn{
     background-color: #0E76FF;
     color: #fff;
@@ -190,7 +195,8 @@ aside .blur{
     z-index: -100;
 }
 
-/* banner CSS */
+
+/* --- banner section --- */
 #stats-banner{
     display: flex;
     justify-content: center;
@@ -220,6 +226,15 @@ aside .blur{
     font-size: 42px;
     text-align: center;
 }
+.money-num::after{
+  content: "€";
+}
+.person-num::before{
+  content:"+";
+}
+
+
+/* --- about section --- */
 #about-section{
     display: flex;
     flex-direction: column;
@@ -246,6 +261,9 @@ aside .blur{
 #about-section .content-wrapper img{
     width: 480px;
 }
+
+
+/* --- innovation section --- */
 #innovation-section{
     display: flex;
     flex-direction: column;
@@ -257,11 +275,9 @@ aside .blur{
     margin-bottom: 112px;
 }
 
-/* Cards Section */
-:root {
-    --bg-color: rgb(20, 20, 20);
-    --card-color: rgb(42, 1, 57);
-  }
+
+/* cards section */
+
 #cards {
     display: flex;
     flex-wrap: wrap;
@@ -314,7 +330,7 @@ aside .blur{
     z-index: 1;
   }
   .card > .card-content{
-    background-color: var(--card-color);
+    background-color: rgb(42, 1, 57);;
     border-radius: inherit;
     display: flex;
     flex-direction: column;
@@ -336,7 +352,7 @@ aside .blur{
     overflow: hidden;
   } 
   .card-image > i{
-    font-size: 3em;
+    font-size: 2.3em;
     opacity: 0.7;
   } 
   .card-info-wrapper{
@@ -377,7 +393,7 @@ aside .blur{
   
   
     
-  /* -- ↓ ↓ ↓ some responsiveness for the cards ↓ ↓ ↓ -- */ 
+  /* responsiveness for the cards */ 
   @media(max-width: 1000px) {
     body {
       align-items: flex-start;  

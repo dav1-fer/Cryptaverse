@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1d9d36e9e2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> <!-- jQuery library access -->
 </head>
 <body>
     <header>
@@ -48,28 +49,36 @@
             <i class="fa-solid fa-earth-europe"></i>
             <figcaption>
                 <p>Total Users</p>
-                <h4>+500.000</h4>
+                <h4>
+                  <span class="counter person-num">500000</span>
+                </h4>
             </figcaption>
         </figure>
         <figure class="card-wrapper">
             <i class="fa-solid fa-money-bill-transfer"></i>
             <figcaption>
                 <p>Daily Transactions</p>
-                <h4>~100.000</h4>
+                <h4>
+                  <span class="counter money-num">150000</span>
+                </h4>
             </figcaption>
         </figure>
         <figure class="card-wrapper">
             <i class="fa-solid fa-arrow-trend-up"></i>
             <figcaption>
                 <p>Market Cap</p>
-                <h4>+450.000€</h4>
+                <h4>
+                  <span class="counter money-num">450000</span>
+                </h4>
             </figcaption>
         </figure>
         <figure class="card-wrapper">
             <i class="fa-solid fa-users"></i>
             <figcaption>
                 <p>Community Members</p>
-                <h4>+50.000</h4>
+                <h4>
+                  <span class="counter person-num">50000</span>
+                </h4>
             </figcaption>
         </figure>
     </section>
@@ -188,6 +197,17 @@
         
     </section>
 
-    <script src="interaction.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> <!-- script for counterUp Animation -->
+    <script src="script.js"></script>
+
+    <script>
+      jQuery(document) .ready(function($){
+        $('.counter').counterUp({
+    delay: 10,
+    time: 1280
+});
+      })
+    </script>
 </body>
 </html>
