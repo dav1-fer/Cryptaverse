@@ -205,23 +205,23 @@ aside .blur{
     padding: 48px 0 80px 0;
     background: linear-gradient(180deg, rgba(2,2,60,1) 15%, rgba(0,0,0, 0) 100%) ;
 }
-.card-wrapper{
+.stat-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 80px;
 }
 
-.card-wrapper i{
+.stat-wrapper i{
     font-size: 48px;
     padding-bottom: 16px;
 }
-.card-wrapper figcaption p{
+.stat-wrapper figcaption p{
     font-family: "Satoshi-Medium", sans-serif;
     text-align: center;
     padding-bottom: 8px;
 }
-.card-wrapper  figcaption h4{
+.stat-wrapper  figcaption h4{
     font-family: "Satoshi-Bold";
     font-size: 42px;
     text-align: center;
@@ -384,16 +384,65 @@ aside .blur{
     margin-top: 8px;
   }
   
+  #roadmap-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  #roadmap-section h2{
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 60px;
+    margin-bottom: 104px;
+  }
+
+  .card-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 24px 32px;
+    border: 2px solid #fafafa;
+    border-radius: 8px;
+  }
+  .icon-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5D3676;
+    border-radius: 8px;
+    padding: 16px;
+    margin-right: 24px;
+  }
+  .fa-lightbulb{
+    font-size: 24px;
+  }
+
+  .text-container p{
+    width: 400px;
+  }
+  
+  
+  /* positioning of the cards by individual classes */
+  /* 400px of vertical spacing between cards */
+  
+  .step1{
+    position: absolute;
+    transform: translateY(200px);
+    left: 80px;
+  }
+  .step2{
+    position: absolute;
+    transform: translateY(600px);
+    right: 80px;
+  }
+
   
   
   
   
   
-  
-  
-  
-  
-    
+
+
+
   /* responsiveness for the cards */ 
   @media(max-width: 1000px) {
     body {
