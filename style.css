@@ -281,8 +281,8 @@ aside .blur{
 #cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;  
-    max-width: 916px;
+    gap: 16px;  
+    max-width: 1016px;
     width: calc(100% - 20px);
   } 
   #cards:hover > .card::after{
