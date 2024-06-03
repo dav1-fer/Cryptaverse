@@ -434,6 +434,37 @@ aside .blur{
     transform: translateY(600px);
     right: 80px;
   }
+  .step3{
+    position: absolute;
+    transform: translateY(1000px);
+    left: 80px;
+  }
+  .step4{
+    position: absolute;
+    transform: translateY(1400px);
+    right: 80px;
+  }
+  .step5{
+    position: absolute;
+    transform: translateY(1800px);
+    left: 80px;
+  }
+  .step6{
+    position: absolute;
+    transform: translateY(2200px);
+    right: 80px;
+  }
+  .step7{
+    position: absolute;
+    transform: translateY(2600px);
+    left: 80px;
+  }
+  .step8{
+    position: absolute;
+    transform: translateY(3000px);
+    right: 80px;
+  }
+  
 
   
   
