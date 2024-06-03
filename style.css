@@ -239,7 +239,7 @@ aside .blur{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 306px 0 208px 0;
+    margin: 128px 0 208px 0;
 }
 #about-section h2{
     font-family: "Satoshi-Bold", sans-serif;
@@ -280,10 +280,11 @@ aside .blur{
 
 #cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 16px;  
-    max-width: 1016px;
-    width: calc(100% - 20px);
+    max-width: 1216px;
+    width: calc(100% - 16px);
   } 
   #cards:hover > .card::after{
     opacity: 1;
@@ -330,7 +331,7 @@ aside .blur{
     z-index: 1;
   }
   .card > .card-content{
-    background-color: rgb(42, 1, 57);;
+    background-color: rgba(77, 17, 92, 0.9);
     border-radius: inherit;
     display: flex;
     flex-direction: column;
