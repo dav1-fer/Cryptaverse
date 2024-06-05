@@ -421,8 +421,8 @@ aside .blur{
   }
   
   
-  /* positioning of the cards by individual classes */
-  /* 400px of vertical spacing between cards */
+  /* absolute positioning of the cards by individual classes */
+  /* 400px of vertical spacing between each card */
   
   .step1{
     position: absolute;
