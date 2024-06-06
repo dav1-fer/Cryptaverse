@@ -176,7 +176,7 @@ nav{
         background-position: 0% 50%;
     }
 }
-#hero-section h2{
+#hero-section h3{
     font-family: 'Satoshi-Bold', sans-serif;
     font-size: 26px;
     letter-spacing: 0px;
@@ -386,7 +386,7 @@ aside .blur{
   
   #roadmap-section{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 200px;
   }
@@ -397,11 +397,14 @@ aside .blur{
   }
 
   .card-wrapper{
+    background-color: #070246;
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 24px 32px;
-    border: 2px solid #fafafa;
-    border-radius: 8px;
+    margin: 104px;
+    border: 3px solid #fafafa;
+    border-radius: 12px;
   }
   .icon-wrapper{
     display: flex;
@@ -412,64 +415,183 @@ aside .blur{
     padding: 16px;
     margin-right: 24px;
   }
-  .fa-lightbulb{
-    font-size: 24px;
+  i{
+    font-size: 32px;
   }
 
   .text-container p{
     width: 400px;
   }
   
-  
-  /* absolute positioning of the cards by individual classes */
-  /* 400px of vertical spacing between each card */
-  
+  /* indivdual horizontal alignment to the roadmap cards */
+
   .step1{
-    position: absolute;
-    transform: translateY(200px);
-    left: 80px;
+    margin-right: auto;
   }
   .step2{
-    position: absolute;
-    transform: translateY(600px);
-    right: 80px;
+    margin-left: auto;
   }
   .step3{
-    position: absolute;
-    transform: translateY(1000px);
-    left: 80px;
+    margin-right: auto;
   }
   .step4{
-    position: absolute;
-    transform: translateY(1400px);
-    right: 80px;
+    margin-left: auto;
   }
   .step5{
-    position: absolute;
-    transform: translateY(1800px);
-    left: 80px;
+    margin-right: auto;
   }
   .step6{
-    position: absolute;
-    transform: translateY(2200px);
-    right: 80px;
+    margin-left: auto;
   }
   .step7{
-    position: absolute;
-    transform: translateY(2600px);
-    left: 80px;
+    margin-right: auto;
   }
   .step8{
-    position: absolute;
-    transform: translateY(3000px);
-    right: 80px;
+    margin-left: auto;
   }
-  
+
+
+  #community-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  #community-section h2{
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 60px;
+    margin-bottom: 104px;
+  }
 
   
+  .content-container{
+    display: flex;
+    align-items: center;
+  }
+  .content-container button{
+    background-color: #0E76FF;
+    color: #fff;
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 62px;
+    cursor: pointer;
+    padding: 16px 32px;
+    transition: 0.3s ease;
+}
+.content-container button:hover{
+    background-color: #780EFF;
+}
   
+  .text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .text-wrapper h3{
+    font-family: 'Satoshi-Bold', sans-serif;
+    font-size: 26px;
+    letter-spacing: 0px;
+    margin-bottom: 8px;
+  }
   
+  .text-wrapper p{
+    width: 550px;
+    font-size: 22px;
+    line-height: 140%;
+    margin-bottom: 32px;
+  }
   
+  video{
+    width: 624px;
+    border-radius: 12px;
+    padding-left: 72px;
+  }
+  
+  footer{
+    display: flex;
+    justify-content: space-between;
+    height: 254px;
+    padding: 60px 40px;
+    background-color: rgba(45, 45, 45, 0.6);
+  }
+
+  .left-content{
+    display: flex;
+  }
+
+  footer .logo-container{
+    margin-right: 72px;
+  }
+
+  footer .logo-container .logo{
+    width: 64px;
+    cursor: pointer;
+    padding: 0 16px;
+  }
+
+  footer .navigation-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 8px 62px;
+  }
+  .navigation-sec h4{
+  font-family: "Satoshi-Medium";
+  font-size: 22px;
+  padding-bottom: 8px;
+}
+  .navigation-sec a{
+    padding: 8px 0;
+    font-size: 18px;
+    color: #fafafa;
+    text-decoration: none;
+  }
+  .navigation-sec a:hover{
+    text-decoration: underline;
+  }
+
+  footer .helpful-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 8px 62px;
+  }
+  .helpful-sec h4{
+    font-family: "Satoshi-Medium";
+    font-size: 22px;
+    padding-bottom: 8px;
+  }
+  .helpful-sec a{
+    padding: 8px 0;
+    font-size: 18px;
+    color: #fafafa;
+    text-decoration: none;
+  }
+  .helpful-sec a:hover{
+    text-decoration: underline;
+  }
+
+  .contact-sec h4{
+    font-family: "Satoshi-Medium";
+    font-size: 22px;
+  }
+
+  .contact-sec i{
+    font-size: 18px;
+  }
+
+  .contact-sec .phone{
+    margin: 16px 0;
+  }
+
+  .contact-sec .email{
+    margin: 16px 0;
+  }
+
+
   
 
 
