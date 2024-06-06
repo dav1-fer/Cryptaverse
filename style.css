@@ -588,11 +588,14 @@ aside .blur{
   }
 
   .contact-sec .email{
-    margin: 16px 0;
+    margin: 16px 0 32px 0;
+  }
+
+  footer p{
+    font-size: 12px;
   }
 
 
-  
 
 
 
