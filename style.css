@@ -418,35 +418,14 @@ aside .blur{
   i{
     font-size: 32px;
   }
-
   .text-container p{
     width: 400px;
   }
-  
   /* indivdual horizontal alignment to the roadmap cards */
-
-  .step1{
+  .step1, .step3, .step5, .step7 {
     margin-right: auto;
   }
-  .step2{
-    margin-left: auto;
-  }
-  .step3{
-    margin-right: auto;
-  }
-  .step4{
-    margin-left: auto;
-  }
-  .step5{
-    margin-right: auto;
-  }
-  .step6{
-    margin-left: auto;
-  }
-  .step7{
-    margin-right: auto;
-  }
-  .step8{
+  .step2, .step4, .step6, .step8 {
     margin-left: auto;
   }
 
@@ -458,14 +437,11 @@ aside .blur{
     margin-top: 200px;
     margin-bottom: 200px;
   }
-
   #community-section h2{
     font-family: "Satoshi-Bold", sans-serif;
     font-size: 60px;
     margin-bottom: 104px;
   }
-
-  
   .content-container{
     display: flex;
     align-items: center;
@@ -484,7 +460,6 @@ aside .blur{
 .content-container button:hover{
     background-color: #780EFF;
 }
-  
   .text-wrapper{
     display: flex;
     flex-direction: column;
@@ -496,20 +471,19 @@ aside .blur{
     letter-spacing: 0px;
     margin-bottom: 8px;
   }
-  
   .text-wrapper p{
     width: 550px;
     font-size: 22px;
     line-height: 140%;
     margin-bottom: 32px;
   }
-  
   video{
     width: 624px;
     border-radius: 12px;
     padding-left: 72px;
   }
   
+
   footer{
     display: flex;
     justify-content: space-between;
@@ -517,21 +491,17 @@ aside .blur{
     padding: 60px 40px;
     background-color: rgba(45, 45, 45, 0.6);
   }
-
   .left-content{
     display: flex;
   }
-
   footer .logo-container{
     margin-right: 72px;
   }
-
   footer .logo-container .logo{
     width: 64px;
     cursor: pointer;
     padding: 0 16px;
   }
-
   footer .navigation-sec{
     display: flex;
     flex-direction: column;
@@ -573,24 +543,19 @@ aside .blur{
   .helpful-sec a:hover{
     text-decoration: underline;
   }
-
   .contact-sec h4{
     font-family: "Satoshi-Medium";
     font-size: 22px;
   }
-
   .contact-sec i{
     font-size: 18px;
   }
-
   .contact-sec .phone{
     margin: 16px 0;
   }
-
   .contact-sec .email{
     margin: 16px 0 32px 0;
   }
-
   footer p{
     font-size: 12px;
   }
@@ -599,11 +564,95 @@ aside .blur{
 
 
 
-  /* responsiveness for the cards */ 
-  @media(max-width: 1000px) {
-    body {
-      align-items: flex-start;  
-      overflow: auto;
+  /* responsiveness */ 
+
+  @media(max-width: 1363px) {
+    #hero-section h1 {
+      font-size: 54px;
+    }
+    #hero-section h3 {
+      font-size: 22px;
+    }
+    #hero-section p {
+      font-size: 18px;
+      width: 540px;
+    }
+    #hero-section aside img {
+      width: 450px;
+    }
+    .stat-wrapper {
+      padding: 0 54px;
+    }
+    .stat-wrapper figcaption h4 {
+      font-size: 40px;
+    }
+    #about-section h2 {
+      font-size: 54px;
+    }
+    #about-section .content-wrapper p {
+      padding: 80px;
+    }
+    #about-section .content-wrapper img {
+      width: 400px;
+    }
+    #innovation-section h2 {
+      font-size: 54px;
+    }
+    #roadmap-section h2 {
+      font-size: 54px;
+    }
+    #community-section h2 {
+      font-size: 54px;
+    }
+    #community-section h3 {
+      font-size: 22px;
+    }
+    #community-section p {
+      font-size: 18px;
+    }
+    #community-section video {
+      width: 500px;
+    }
+    .navigation-sec a, .helpful-sec a, .contact-sec a {
+      font-size: 14px;
+    }
+  }
+
+  @media(max-width: 1150px) {
+    nav .nav-links, nav #main-btn {
+      display: none;
+    }
+    #hero-section {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    #hero-section .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    } 
+    #main-btn {
+      margin-bottom: 132px;
+    }
+    #stats-banner {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    #stats-banner .stat-wrapper {
+      margin: 60px;
+    }
+    #about-section .content-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    #about-section .content-wrapper img {
+      order: 1;
+    }
+    #about-section .content-wrapper p{
+      order: 2;
+      text-align: center;
     }
     #cards {    
       max-width: 1000px;
@@ -613,8 +662,30 @@ aside .blur{
       flex-shrink: 1;
       width: calc(50% - 4px);
     }
+    #community-section .content-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    #community-section .text-wrapper {
+      order: 2;
+      align-items: center;
+      text-align: center;
+    }
+    #community-section video {
+      order: 1;
+      width: 650px;
+      margin-bottom: 40px;
+
+    }
+    .text-wrapper p {
+      width: 550px;
+    }
   }
-  
+
+
+
+
+/* 500px responsiveness cards */
   @media(max-width: 500px) {
     .card {
       height: 180px;
@@ -637,11 +708,5 @@ aside .blur{
     .card-info-title > h4 {
       font-size: 0.8em;
       margin-top: 4px;
-    }
-  }
-
-  @media(max-width: 320px) {
-    .card {
-      width: 100%;
     }
   }
