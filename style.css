@@ -1,5 +1,3 @@
-/* Importing all the diferent variants of the Fonts used in woff and woff2 formats*/
-
 /* Light */
 @font-face {
     font-family: 'Satoshi-Light';
@@ -40,7 +38,7 @@
     font-weight: 900;
     font-style: normal;
 }
-
+/* Importing all the diferent variants of the Fonts used in woff and woff2 formats above this comment*/
 
 *{
     margin: 0;
@@ -56,7 +54,6 @@ body{
     background: rgb(1,1,2);
     background: linear-gradient(180deg, rgba(1,1,2,1) 0.3%, rgba(64,19,121,1) 18%, rgba(20,53,139,1) 28%, rgb(27, 64, 157) 47%, rgba(23,3,33) 67%, rgba(1,1,2,1) 100%);
 }
-
 
 /* --- navigation section --- */
 header{
@@ -127,7 +124,6 @@ nav{
     width: 100%;
 }
 
-
 /* --- hero section --- */
 #main-btn{
     background-color: #0E76FF;
@@ -195,7 +191,6 @@ aside .blur{
     z-index: -100;
 }
 
-
 /* --- banner section --- */
 #stats-banner{
     display: flex;
@@ -233,7 +228,6 @@ aside .blur{
   content:"+";
 }
 
-
 /* --- about section --- */
 #about-section{
     display: flex;
@@ -262,7 +256,6 @@ aside .blur{
     width: 480px;
 }
 
-
 /* --- innovation section --- */
 #innovation-section{
     display: flex;
@@ -275,9 +268,7 @@ aside .blur{
     margin-bottom: 112px;
 }
 
-
-/* cards section */
-
+/* --- card section --- */
 #cards {
     display: flex;
     justify-content: center;
@@ -383,7 +374,8 @@ aside .blur{
     font-size: 0.85em;
     margin-top: 8px;
   }
-  
+
+/* --- roadmap section --- */
   #roadmap-section{
     display: flex;
     flex-direction: column;
@@ -395,7 +387,6 @@ aside .blur{
     font-size: 60px;
     margin-bottom: 104px;
   }
-
   .card-wrapper{
     background-color: #070246;
     display: flex;
@@ -403,23 +394,26 @@ aside .blur{
     align-items: center;
     padding: 24px 32px;
     margin: 104px;
-    border: 3px solid #fafafa;
+    border: 2px solid #8454a2;
     border-radius: 12px;
+    transition: all 0.3s ease;
   }
   .icon-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5D3676;
+    background-color: #8454a2;
     border-radius: 8px;
     padding: 16px;
     margin-right: 24px;
+    transition: all 0.7s ease;
   }
   i{
     font-size: 32px;
   }
   .text-container p{
     width: 400px;
+    color: rgba(255, 255, 255, 0.8);
   }
   /* indivdual horizontal alignment to the roadmap cards */
   .step1, .step3, .step5, .step7 {
@@ -428,7 +422,6 @@ aside .blur{
   .step2, .step4, .step6, .step8 {
     margin-left: auto;
   }
-
 
   #community-section{
     display: flex;
@@ -483,7 +476,7 @@ aside .blur{
     padding-left: 12px;
   }
   
-
+/* --- footer --- */
   footer{
     display: flex;
     justify-content: space-between;
@@ -561,11 +554,7 @@ aside .blur{
   }
 
 
-
-
-
-  /* responsiveness */ 
-
+  /* --- responsiveness--- */ 
   @media(max-width: 1363px) {
     #hero-section h1 {
       font-size: 54px;
@@ -682,10 +671,7 @@ aside .blur{
     }
   }
 
-
-
-
-/* 500px responsiveness cards */
+/* --- 500px responsiveness cards --- */
   @media(max-width: 500px) {
     .card {
       height: 180px;
